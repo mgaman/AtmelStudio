@@ -1,0 +1,108 @@
+//void cricket()
+//{
+	//bool SendMessage;
+	//int j;
+	//RF_ENUM Ret;
+	//HardwareInit();
+	//SoftwareInit();
+		//
+	//while (true)
+	//{
+	////	sleepmgr_enter_sleep();       // enters in last defined sleep mode 
+		//
+        //#ifdef CRICKET_MASTER
+			//SendMessage = false;
+			//if (GpioPoll(CRICKET_BUZZER_ON_BUTTON))
+			//{
+				//SendMessage = true;
+				//RepeatMsgID = RF_CRICKET;
+				//RepeatOpCode = TURN_ON;
+			//}
+			//
+			//else if (GpioPoll(CRICKET_BUZZER_OFF_BUTTON))
+			//{
+				//SendMessage = true;
+				//RepeatMsgID = RF_CRICKET;
+				//RepeatOpCode = TURN_OFF;
+			//}
+		//
+			////else if (GpioPoll(CRICKET_WAKE_BUTTON))
+			////{
+			////   SendMessage = true;
+			////   RepeatMsgID = RF_CRICKET;
+			////   RepeatOpCode = WAKE_UP;
+			////}
+		//
+			////else if (GpioPoll(CRICKET_SLEEP_BUTTON))
+			////{
+				////SendMessage = true;
+				////RepeatMsgID = RF_CRICKET;
+				////RepeatOpCode = GO_TO_SLEEP;
+			////}
+		//
+			//// if there is a message to send, do it here in a closed loop
+			//// assume 150 msecs per message
+			//if (SendMessage) 
+			//{
+				//ONBOARD_LED_TOGGLE;
+				//msgCounter = CRICKET_SLEEP_MSECS/150;  //slave wakes up each second => msgCounter is OK
+				//
+				//RFInitTransmiter(CRICKET_RF_DEVICE);
+				//for (j=0;j<msgCounter;j++)
+					//RFSendPacket(0,RepeatMsgID,RepeatOpCode,0xffff,NULL,0);
+				//RFIdle(CRICKET_RF_DEVICE);
+			//}
+			//
+         //#elif defined(CRICKET_SLAVE)
+		////	RFInitReceiver(CRICKET_RF_DEVICE);
+			//
+			//decodedPacket.header.packetLen = 0;
+//
+			//RFReceiveMode_Handler(0);                     
+			//if (decodedPacket.header.packetLen != 0)
+			//{
+			//// got a packet, handle it
+			   //switch (decodedPacket.header.msgID)
+			   //{
+					//case RF_CRICKET:
+					   //switch (decodedPacket.header.opCode)
+					   //{
+					       //case TURN_ON:
+						       //HIPOWER_LED_ON; 
+						   //break;						   
+						   //
+						   //case TURN_OFF:
+						       //HIPOWER_LED_OFF; 
+						   //break;
+						   //
+						   //case WAKE_UP:
+						    //// definition of sleep mode at the next sleepmgr_enter_sleep() 
+							   //sleepmgr_lock_mode(SLEEPMGR_ACTIVE);	
+							         	          //
+						       //HIPOWER_LED_ON;
+						       //RepeatAction(RTC_SLAVE, 10, RTC_TICKS_SEC, RTC_TICKS_SEC);
+						   //break;
+						   //
+						   //case GO_TO_SLEEP:
+						    //// definition of sleep mode at the next sleepmgr_enter_sleep() 
+						       //sleepmgr_lock_mode(SLEEPMGR_PSAVE);      
+							   //
+						       //HIPOWER_LED_OFF;       
+						   //break;
+						   //
+						   //default:
+						   //break;
+					   //}
+					 //break; 
+					 //
+					 //default:
+					 //break;
+			   //}
+			//}
+			//
+			//RFIdle(CRICKET_RF_DEVICE);   
+         //#endif
+	//}
+//}
+//
+

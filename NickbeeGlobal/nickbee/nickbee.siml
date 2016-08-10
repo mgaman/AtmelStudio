@@ -1,0 +1,14 @@
+// delay based on observed startup time
+#500
+PORTA.IN |= 0X08
+#200
+PORTA.IN &= 0Xf7
+#200
+PORTA.IN |= 0X20
+#200
+PORTA.IN &= 0Xdf
+#200
+PORTB.IN |= 0X02
+#200
+PORTC.IN |= 0X40
+$break

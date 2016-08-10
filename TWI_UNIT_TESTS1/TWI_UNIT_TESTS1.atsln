@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TWI_UNIT_TESTS1", "TWI_UNIT_TESTS1\TWI_UNIT_TESTS1.cproj", "{115CDABC-4E12-4CE3-8CFE-8D4AF390681C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{115CDABC-4E12-4CE3-8CFE-8D4AF390681C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{115CDABC-4E12-4CE3-8CFE-8D4AF390681C}.Debug|AVR.Build.0 = Debug|AVR
+		{115CDABC-4E12-4CE3-8CFE-8D4AF390681C}.Release|AVR.ActiveCfg = Release|AVR
+		{115CDABC-4E12-4CE3-8CFE-8D4AF390681C}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

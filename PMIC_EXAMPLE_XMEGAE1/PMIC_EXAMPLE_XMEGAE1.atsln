@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "PMIC_EXAMPLE_XMEGAE1", "PMIC_EXAMPLE_XMEGAE1\PMIC_EXAMPLE_XMEGAE1.cproj", "{AB69079F-395A-4C62-BE76-1D841087C85A}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "PMIC_EXAMPLE1", "PMIC_EXAMPLE1\PMIC_EXAMPLE1.cproj", "{9B093F7A-00C9-4A87-8D64-EF4B614432B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB69079F-395A-4C62-BE76-1D841087C85A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{AB69079F-395A-4C62-BE76-1D841087C85A}.Debug|AVR.Build.0 = Debug|AVR
+		{AB69079F-395A-4C62-BE76-1D841087C85A}.Release|AVR.ActiveCfg = Release|AVR
+		{AB69079F-395A-4C62-BE76-1D841087C85A}.Release|AVR.Build.0 = Release|AVR
+		{9B093F7A-00C9-4A87-8D64-EF4B614432B5}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9B093F7A-00C9-4A87-8D64-EF4B614432B5}.Debug|AVR.Build.0 = Debug|AVR
+		{9B093F7A-00C9-4A87-8D64-EF4B614432B5}.Release|AVR.ActiveCfg = Release|AVR
+		{9B093F7A-00C9-4A87-8D64-EF4B614432B5}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

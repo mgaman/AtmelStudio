@@ -1,0 +1,23 @@
+// delay based on observed startup time 
+$repeat 1000
+// portc.6 on/off
+//#5000
+//PORTC.IN |= 0X40
+//#5000
+//PORTC.IN &= 0xBF
+//#5000
+//PORTC.IN |= 0X80
+//#5000
+//PORTC.IN &= 0x7F
+// port a.3 on/off
+#10000
+PORTA.IN |= 0x08
+#10000
+PORTA.IN &= 0xf7
+//#10000
+// port a.5 on
+//PORTA.IN |= 0x20
+//#8000
+//USARTC0.DATA = 0x55
+$endrep
+$break
